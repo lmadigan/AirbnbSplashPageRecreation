@@ -32,7 +32,7 @@ With this Airbnb Splash Recreation, users will be able to:
 This user interactive page will be a recreation of the cover page for Airbnb. In the page, I will incorporate functionality to make a more dynamic page to entice users to click various regions and explore further.
  With the use of short animated gifs, photo slide shows, and on hover effects, I plan to demonstrate different tactics, created through HTML5, CSS, and Javascript that can be used to increase user response.
 
-![wireframes](app/assets/images/AirbnbCoverPhoto.png)
+![wireframes](InteractiveAirBnbSplash/app/assets/images/AirbnbCoverPhoto.png)
 
 ### Architecture and Technologies
 
