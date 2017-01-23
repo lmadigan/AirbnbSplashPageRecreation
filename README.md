@@ -30,7 +30,7 @@ With this Airbnb Splash Recreation, users will effortlessly interact with variou
 ### Wireframes
 
 This user interactive page will be a recreation of the splash page for Airbnb. In this demo, I will incorporate functionality to make a more dynamic page to entice users to click various regions and explore further.
- With the use of short animated gifs, photo slide shows, and on hover effects, I plan to demonstrate different tactics, created through HTML5, CSS, and Javascript that can be used to increase user response.
+ With the use of short animated gifs, photo slide shows, and hover effects, I plan to demonstrate different techniques, created through HTML5, CSS, and Javascript that can be used to increase user response.
 
 ![wireframes](InteractiveAirBnbSplash/app/assets/images/AirbnbCoverPhoto.png)
 
