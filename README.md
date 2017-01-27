@@ -7,7 +7,7 @@ By recreating the home page, I will implement HTML/CSS tricks aimed at enhancing
 
 1) Hover effect that plays a slideshow of images associated with a given listing
 2) Hover effect that rotates experience page 180 degrees to play video of event
-2) Hover effect that causes image to play as gif
+2) Hover effect on featured destination
 
 ### Hover Over Listings to View Slideshow
 
