@@ -13,8 +13,12 @@ By recreating the home page, I will implement HTML/CSS tricks aimed at enhancing
 ![][listingsVideo]
 
 
-### Show Video of Experiences
+###Code Demo
+
+![][listingsVideo]
+
 
 
 
 [listingsVideo]: photo_slideshow/docs/videos/listings.mov
+[code_demo]: photo_slideshow/docs/videos/code_demo.png
