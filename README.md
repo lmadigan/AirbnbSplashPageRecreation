@@ -21,4 +21,4 @@ By recreating the home page, I will implement HTML/CSS tricks aimed at enhancing
 
 
 [listingsVideo]: ./docs/videos/listings.mov
-[code_demo]: ./docs/videos/code_demo.png
+[code_demo]: ./docs/code_demo.png
