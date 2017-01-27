@@ -15,7 +15,7 @@ By recreating the home page, I will implement HTML/CSS tricks aimed at enhancing
 
 ###Code Demo
 
-![][listingsVideo]
+![][code_demo]
 
 
 
