@@ -134,133 +134,16 @@
      </div>
      <div class="inner-slideshow">
      <div class="html">
-       <p>    &lt;div class="outer-rotate"&gt;<br>
-          &lt;div class="rotate-container" onTouchStart="this.classList.toggle('hover');"&gt;<br>
-            &lt;div class="rotate"&gt;<br>
-              &lt;div class='front'&gt;<br>
-                &lt;img src='images/pyro_cover.jpg'&gt;<br>
-              &lt;/div&gt;<br>
-              &lt;div class='back'&gt;<br>
-                &lt;video class="video-1" width='auto' height='427px'&gt;<br>
-                  &lt;source src='videos/pyro_video.mp4' type='video/mp4'&gt;<br>
-                &lt;/video&gt;<br>
-              &lt;/div&gt;<br>
-            &lt;/div&gt;<br>
-          &lt;/div&gt;<br>
-        &lt;/p&gt;<br>
+
      </div>
      <div class="css">
        <div class="rotate-css-wrapper">
-       <p><code>
-         .outer-rotate {<br>
-           width: 100%;<br>
-           height: 500px;<br>
-           display: flex;<br>
-           justify-content: flex-start;<br>
-           margin-right: 10px;<br>
-           margin-left: 10px;<br>
-           max-width: 956px;<br>
-         }<br>
-<br>
-         .rotate-container{<br>
-           -webkit-perspective: 1000;<br>
-           -moz-perspective: 1000;<br>
-           -o-perspective: 1000;<br>
-           perspective: 1000;<br>
-           margin: 20px;<br>
-           margin-left: 0;<br>
-         }<br>
 
-         .rotate-container:hover .rotate,<br>
-         .rotate-container.hover .rotate {<br>
-             -webkit-transform: rotateY(180deg);<br>
-         		-moz-transform: rotateY(180deg);<br>
-             -o-transform: rotateY(180deg);<br>
-         		transform: rotateY(180deg);<br>
-         	}<br>
 
-         .rotate-container, .front, .back {<br>
-           width: 250px;<br>
-           height: 300px;<br>
-         }<br>
-<br>
-         .rotate {<br>
-           webkit-transition: 0.6s;<br>
-         	-webkit-transform-style: preserve-3d;<br>
-<br>
-         	-moz-transition: 0.6s;<br>
-         	-moz-transform-style: preserve-3d;<br>
-
-           -o-transition: 0.6s;<br>
-         	-o-transform-style: preserve-3d;<br>
-         	transition: 0.8s;<br>
-         	transform-style: preserve-3d;<br>
-
-         	position: relative;<br>
-           height: inherit;<br>
-           width: inherit;<br>
-         }<br>
-
-<br>
-         .front, .back {<br>
-           -webkit-backface-visibility: hidden;<br>
-           -moz-backface-visibility: hidden;<br>
-           -o-backface-visibility: hidden;<br>
-         	backface-visibility: hidden;<br>
-<br>
-         	position: absolute;<br>
-         	top: 0;<br>
-         	left: 0;<br>
-         }<br>
-
-  <br>
-         .front {<br>
-         	z-index: 2;<br>
-         	transform: rotateY(0deg);<br>
-           height: 375px;<br>
-           width: 250px;<br>
-         }<br>
-<br>
-         /* back, initially hidden pane */<br>
-         .back {<br>
-           -webkit-transform: rotateY(180deg);<br>
-         	-moz-transform: rotateY(180deg);<br>
-           -o-transform: rotateY(180deg);<br>
-         	transform: rotateY(180deg);<br>
-           overflow: hidden;<br>
-           height: 375px;<br>
-           width: 250px;<br>
-         }<br>
-<br>
-         .front img{<br>
-           width: 100%;<br>
-           height: auto;<br>
-         }<br>
-<br>
-         .back video{<br>
-           min-width: 100%;<br>
-           min-height: 100%;<br>
-           width: auto;<br>
-           height: auto;<br>
-         }<br>
-         <br>
-       </code>
-       </p>
      </div>
      </div>
      <div class="javascript">
-       $(".video-1").mousemove( hoverVideo );<br>
-       $(".video-1").mouseout( hideVideo );<br>
-<br>
-       function hoverVideo(e) {<br>
-         e.currentTarget.play();<br>
-         e.muted = false;<br>
-       }<br>
-<br>
-       function hideVideo(e) {<br>
-           e.currentTarget.pause();<br>
-           e.currentTarget.currentTime = 0;<br>
-       }<br>
+
 <br>
 
        </code>
