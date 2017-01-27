@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Photo SlideShow Example</title>
+<link rel="stylesheet" href="rotate.css">
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.js"></script>
+<script type="text/javascript" src="./slideshow.js"></script>
+
+</head>
+
+ <body>
+   <div class="outer-rotate">
+   <div class="rotate-container" onTouchStart="this.classList.toggle('hover');">
+     <div class="rotate">
+       <div class='front'>
+         <img src='images/pyro_cover.jpg'>
+       </div>
+       <div class='back'>
+         <video class="video-1" width='auto' height='427px'>
+           <source src='videos/pyro_video.mp4' type='video/mp4'>
+         </video>
+       </div>
+     </div>
+   </div>
+
+   <div class="rotate-container-1" onTouchStart="this.classList.toggle('hover');">
+     <div class="rotate-1">
+       <div class='front-1'>
+         <img src='images/cheese.png'>
+       </div>
+       <div class='back-1'>
+         <video class="video-2" width='auto' height='427px'>
+           <source src='videos/cheese_video.mp4' type='video/mp4'>
+         </video>
+       </div>
+     </div>
+   </div>
+
+   <div class="rotate-container-2" onTouchStart="this.classList.toggle('hover');">
+     <div class="rotate-2">
+       <div class='front-2'>
+         <img src='images/equality_allies.png'>
+       </div>
+       <div class='back-2'>
+         <video class="video-3" width='auto' height='427px'>
+           <source src='videos/lbgt.mp4' type='video/mp4'>
+         </video>
+       </div>
+     </div>
+   </div>
+ </div>
+ </body>
+
+ <script>
+
+  $(".video-1").mousemove( hoverVideo );
+  $(".video-1").mouseout( hideVideo );
+
+  function hoverVideo(e) {
+    e.currentTarget.play();
+    e.muted = false;
+  }
+
+  function hideVideo(e) {
+      e.currentTarget.pause();
+      e.currentTarget.currentTime = 0;
+  }
+
+  $(".video-2").mousemove( hoverVideo );
+  $(".video-2").mouseout( hideVideo );
+
+  $(".video-3").mousemove( hoverVideo );
+  $(".video-3").mouseout( hideVideo );
+
+ </script>
+
+ </html>

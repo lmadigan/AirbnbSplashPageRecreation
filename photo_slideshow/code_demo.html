@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Code Example</title>
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.js"></script>
+<script type="text/javascript" src="./slideshow.js"></script>
+<link rel="stylesheet" href="reset.css">
+<link rel="stylesheet" href="code_demo.css">
+<style>
+</style>
+</head>
+
+<header>
+  <div class="symbol">
+    <img class="a_symbol" src="images/airbnb.png">
+  </div>
+  <div class="code">
+    Airbnb Features Code Demo
+  </div>
+</header>
+
+
+ <body>
+   <div class="sidebar-container active-container">
+     <div class="sidebar-slide active-nav">
+       Slide Show
+     </div>
+     <div class="flip-video-slide">
+       Flip Video
+     </div>
+     <div class="gif-slide">
+       Gif Animation
+     </div>
+   </div>
+
+   <div class="outer-container">
+
+     <div class="slideshow-container">
+       <div class="nav">
+         <div class="nav-html active">
+           HTML
+         </div>
+         <div class="css-html">
+           CSS
+         </div>
+         <div class="js-html">
+           JS
+         </div>
+       </div>
+       <div class="inner-slideshow">
+       <div class="html">
+         <p> &lt;div class='slideshow-container'&gt;<br><br>
+            &lt;div class='slideshow'&gt;<br><br>
+                &lt;div&gt;&lt;img src="image01"/&gt;&lt;/div&gt;<br><br>
+                &lt;div&gt;&lt;img src="image02"/&gt;&lt;/div&gt;<br><br>
+                &lt;div&gt;&lt;img src="image03"/&gt;&lt;/div&gt;<br><br>
+                &lt;div&gt;&lt;img src="image04"/&gt;&lt;/div&gt;<br><br>
+                &lt;div&gt;&lt;img src="image05"/&gt;&lt;/div&gt;<br><br>
+                &lt;div&gt;&lt;img src="image06"/&gt;&lt;/div&gt;<br><br>
+                &lt;div&gt;&lt;img src="image07"/&gt;&lt;/div&gt;<br><br>
+                &lt;div&gt;&lt;img src="image08"/&gt;&lt;/div&gt;<br><br>
+            &lt;/div&gt;<br><br>
+            &lt;/div&gt;
+          </p>
+       </div>
+       <div class="css">
+         <div class="css-wrapper">
+         <p><code>
+           .slideshow-container{ <br>
+             width: 100%;<br>
+             display: flex;<br>
+             flex-direction: row;<br>
+             justify-content: center;<br>
+           }
+           <br>
+           .slideshow{<br>
+               position: relative;<br>
+               width: 380px;<br>
+               height: 240px;<br>
+               padding: 10px;<br>
+           }
+           <br>
+           .slideshow > div {<br>
+               position: absolute;<br>
+               top: 10px;<br>
+               left: 10px;<br>
+               right: 10px;<br>
+               bottom: 10px;<br>
+           }
+           <br>
+           .slideshow > div > img {<br>
+             width: 100%;<br>
+             height: auto;<br>
+           }
+         </code>
+         </p>
+       </div>
+       </div>
+       <div class="javascript">
+           $(".slideshow > div:gt(0)").hide();<br>
+           $(".slideshow").hover(<br>
+             function () {<br>
+               scroll = setInterval(function() {<br>
+                 $('.slideshow > div:first')<br>
+                   .fadeOut(1000)<br>
+                   .next()<br>
+                   .fadeIn(1000)<br>
+                   .end()<br>
+                   .appendTo('.slideshow');<br>
+               },  2000);<br>
+             }, function() {<br>
+               clearInterval(scroll);<br>
+             }<br>
+           );<br>
+
+         </code>
+         </p>
+       </div>
+     </div>
+   </div>
+
+   <div class="rotate-container">
+     <div class="nav">
+       <div class="nav-html active">
+         HTML
+       </div>
+       <div class="css-html">
+         CSS
+       </div>
+       <div class="js-html">
+         JS
+       </div>
+     </div>
+     <div class="inner-slideshow">
+     <div class="html">
+       <p>    &lt;div class="outer-rotate"&gt;<br>
+          &lt;div class="rotate-container" onTouchStart="this.classList.toggle('hover');"&gt;<br>
+            &lt;div class="rotate"&gt;<br>
+              &lt;div class='front'&gt;<br>
+                &lt;img src='images/pyro_cover.jpg'&gt;<br>
+              &lt;/div&gt;<br>
+              &lt;div class='back'&gt;<br>
+                &lt;video class="video-1" width='auto' height='427px'&gt;<br>
+                  &lt;source src='videos/pyro_video.mp4' type='video/mp4'&gt;<br>
+                &lt;/video&gt;<br>
+              &lt;/div&gt;<br>
+            &lt;/div&gt;<br>
+          &lt;/div&gt;<br>
+        &lt;/p&gt;<br>
+     </div>
+     <div class="css">
+       <div class="rotate-css-wrapper">
+       <p><code>
+         .outer-rotate {<br>
+           width: 100%;<br>
+           height: 500px;<br>
+           display: flex;<br>
+           justify-content: flex-start;<br>
+           margin-right: 10px;<br>
+           margin-left: 10px;<br>
+           max-width: 956px;<br>
+         }<br>
+<br>
+         .rotate-container{<br>
+           -webkit-perspective: 1000;<br>
+           -moz-perspective: 1000;<br>
+           -o-perspective: 1000;<br>
+           perspective: 1000;<br>
+           margin: 20px;<br>
+           margin-left: 0;<br>
+         }<br>
+
+         .rotate-container:hover .rotate,<br>
+         .rotate-container.hover .rotate {<br>
+             -webkit-transform: rotateY(180deg);<br>
+         		-moz-transform: rotateY(180deg);<br>
+             -o-transform: rotateY(180deg);<br>
+         		transform: rotateY(180deg);<br>
+         	}<br>
+
+         .rotate-container, .front, .back {<br>
+           width: 250px;<br>
+           height: 300px;<br>
+         }<br>
+<br>
+         .rotate {<br>
+           webkit-transition: 0.6s;<br>
+         	-webkit-transform-style: preserve-3d;<br>
+<br>
+         	-moz-transition: 0.6s;<br>
+         	-moz-transform-style: preserve-3d;<br>
+
+           -o-transition: 0.6s;<br>
+         	-o-transform-style: preserve-3d;<br>
+         	transition: 0.8s;<br>
+         	transform-style: preserve-3d;<br>
+
+         	position: relative;<br>
+           height: inherit;<br>
+           width: inherit;<br>
+         }<br>
+
+<br>
+         .front, .back {<br>
+           -webkit-backface-visibility: hidden;<br>
+           -moz-backface-visibility: hidden;<br>
+           -o-backface-visibility: hidden;<br>
+         	backface-visibility: hidden;<br>
+<br>
+         	position: absolute;<br>
+         	top: 0;<br>
+         	left: 0;<br>
+         }<br>
+
+  <br>
+         .front {<br>
+         	z-index: 2;<br>
+         	transform: rotateY(0deg);<br>
+           height: 375px;<br>
+           width: 250px;<br>
+         }<br>
+<br>
+         /* back, initially hidden pane */<br>
+         .back {<br>
+           -webkit-transform: rotateY(180deg);<br>
+         	-moz-transform: rotateY(180deg);<br>
+           -o-transform: rotateY(180deg);<br>
+         	transform: rotateY(180deg);<br>
+           overflow: hidden;<br>
+           height: 375px;<br>
+           width: 250px;<br>
+         }<br>
+<br>
+         .front img{<br>
+           width: 100%;<br>
+           height: auto;<br>
+         }<br>
+<br>
+         .back video{<br>
+           min-width: 100%;<br>
+           min-height: 100%;<br>
+           width: auto;<br>
+           height: auto;<br>
+         }<br>
+         <br>
+       </code>
+       </p>
+     </div>
+     </div>
+     <div class="javascript">
+       $(".video-1").mousemove( hoverVideo );<br>
+       $(".video-1").mouseout( hideVideo );<br>
+<br>
+       function hoverVideo(e) {<br>
+         e.currentTarget.play();<br>
+         e.muted = false;<br>
+       }<br>
+<br>
+       function hideVideo(e) {<br>
+           e.currentTarget.pause();<br>
+           e.currentTarget.currentTime = 0;<br>
+       }<br>
+<br>
+
+       </code>
+       </p>
+     </div>
+   </div>
+  </div>
+   </div>
+ </body>
+
+ <script>
+
+ $('.js-html').click(function(){
+   $('.js-html').addClass("active");
+   $('.css-html').removeClass("active");
+   $('.nav-html').removeClass("active");
+   $('.javascript').css("display", "inline-block");
+   $('.html').css("display", "none");
+   $('.css').css("display", "none");
+
+ })
+
+ $('.css-html').click(function(){
+   $('.css-html').addClass("active");
+   $('.js-html').removeClass("active");
+   $('.nav-html').removeClass("active");
+   $('.css').css("display", "inline-block");
+   $('.javascript').css("display", "none");
+   $('.html').css("display", "none");
+
+ })
+
+ $('.nav-html').click(function(){
+   $('.nav-html').addClass("active");
+   $('.js-html').removeClass("active");
+   $('.css-html').removeClass("active");
+   $('.html').css("display", "inline-block");
+   $('.javascript').css("display", "none");
+   $('.css').css("display", "none");
+ })
+
+ $('.sidebar-slide').click(function(){
+   $('.rotate-container').css("display", "none");
+   $('.slideshow-container').css("display", "inline-block");
+   $('.sidebar-slide').addClass("active-nav");
+   $('.flip-video-slide').removeClass("active-nav");
+   $('.gif-slide').removeClass("active-nav");
+ })
+
+  $('.gif-slide').click(function(){
+   $('.gif-slide').addClass("active-nav");
+   $('.flip-video-slide').removeClass("active-nav");
+   $('.sidebar-slide').removeClass("active-nav");
+ })
+
+  $('.flip-video-slide').click(function(){
+    $('.rotate-container').css("display", "inline-block");
+    $('.slideshow-container').css("display", "none");
+   $('.flip-video-slide').addClass("active-nav");
+   $('.sidebar-slide').removeClass("active-nav");
+   $('.gif-slide').removeClass("active-nav");
+ })
+
+
+  $('.rotate-container').click(function(){
+
+    $('').removeClass("active-nav");
+  })
+
+
+ </script>
+
+ </html>

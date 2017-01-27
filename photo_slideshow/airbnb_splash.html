@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.1.1.min.js"> </script>
+  <link rel="stylesheet" href="slideshow.css">
+  <link rel="stylesheet" href="rotate.css">
+  <link rel="stylesheet" href="spash.css">
+  <link rel="stylesheet" href="reset.css">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.js"></script>
+  <script type="text/javascript" src="./slideshow.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  </head>
+
+  <header>
+    <div class="symbol">
+      <img src="images/airbnb.png">
+    </div>
+    <div class="code">
+      <a href="code_demo.html">View Code Demo</a>
+    </div>
+  </header>
+
+  <body>
+    <div class="body">
+    <div class="inner-body">
+
+
+    <div class='div-container'>
+      <div class='header'>
+        <span><h1 id="airbnb-head">AirBnb</h1><h1>A Dynamic, Interactive
+          Recreation of the Airbnb Home Page</h1></span>
+          <span><h3>Hover over features to see check it out</h3></span>
+          <span class="hidden-explanation">
+            Airbnb strives to create human connections; I've implimented
+            small changes that I think would create a more
+            interactive webpage... encouraging a more impactful connection between the
+            user and the interface.<br>
+            1. Slide show of images associated with a given listing<br>
+            2. Flip Video of Experiences Listed<br>
+            3. Dynamically sized Featured Destination to encourage user response <br>
+
+
+          </span>
+      </div>
+    </div>
+
+    <div class="div-container">
+      <div class="location-search-container">
+        <div class="location-search-where">
+          <h3 class="where">Where</h3>
+          <h3 class="london">London, United Kingdom</h3>
+        </div>
+        <div class="location-search-when">
+          <h3 class="where">When</h3>
+          <h3 class="checkin"> Check In       Check Out</h3>
+        </div>
+        <div class="location-search-guest">
+        </div>
+      </div>
+    </div>
+
+    <div class="writing">
+      <h3 class="recently-viewed">Recently Viewed</h3>
+    </div>
+    <div class='div-container'>
+    <div class='slideshow-container'>
+    <div class="s1">
+     <div class='slideshow'>
+         <div><img src='images/recent_places/sf_couch.png' alt="image01"/></div>
+         <div><img src='images/recent_places/sf_bed.png' alt="image02"/></div>
+         <div><img src='images/recent_places/sf_pillows.png' alt="image03"/></div>
+         <div><img src='images/recent_places/sf_shells.png' alt="image04"/></div>
+         <div><img src='images/recent_places/sf_windows.png' alt="image05"/></div>
+         <div><img src='images/recent_places/sf_wine.png' alt="image06"/></div>
+         <div><img src='images/recent_places/sf_table.png' alt="image07"/></div>
+         <div><img src='images/recent_places/sf_elephant.png' alt="image08"/></div>
+     </div>
+     <br>
+     <div class="title"><div class='S'>$198</div>Sunny apartment near metro station.</div>
+   </div>
+    <div class="s2">
+      <div class='slideshow-1'>
+         <div><img src='images/recent_places/jt_front.png' alt="image01"/></div>
+         <div><img src='images/recent_places/jt_bed.png' alt="image02"/></div>
+         <div><img src='images/recent_places/jt_frontyard.png' alt="image03"/></div>
+         <div><img src='images/recent_places/jt_hottub.png' alt="image04"/></div>
+         <div><img src='images/recent_places/jt_lodge.png' alt="image05"/></div>
+         <div><img src='images/recent_places/jt_picture.png' alt="image06"/></div>
+         <div><img src='images/recent_places/jt_couch.png' alt="image07"/></div>
+         <div><img src='images/recent_places/jt_sunset.png' alt="image08"/></div>
+     </div>
+     <br>
+     <div class="title"><div class='S'>$80</div>Entire home/apt in Joshua Tree.</div>
+    </div>
+
+      <div class="s3">
+      <div class='slideshow-2'>
+         <div><img src='images/recent_places/brazil.png' alt="image01"/></div>
+         <div><img src='images/recent_places/brazil_chairs.png' alt="image02"/></div>
+         <div><img src='images/recent_places/brazil_beach.png' alt="image03"/></div>
+         <div><img src='images/recent_places/brazilfront.png' alt="image04"/></div>
+         <div><img src='images/recent_places/brazil_table.png' alt="image05"/></div>
+         <div><img src='images/recent_places/brazil_beach2.png' alt="image06"/></div>
+         <div><img src='images/recent_places/brazil_couch.png' alt="image07"/></div>
+         <div><img src='images/recent_places/brazil_table.png' alt="image08"/></div>
+     </div>
+     <br>
+     <div class="title"><div class='S'>$100</div>Exception Property Private Beach.</div>
+   </div>
+    </div>
+  </div>
+
+  <div class="writing">
+    <h3 class="experiences">Experiences</h3>
+  </div>
+  <div class='div-container'>
+    <div class="outer-rotate">
+
+    <div class="rotate-container" onTouchStart="this.classList.toggle('hover');">
+      <div class="rotate">
+        <div class='front'>
+          <img src='images/pyro_cover.jpg'>
+        </div>
+        <div class='back'>
+          <video class="video-1" width='auto' height='427px'>
+            <source src='videos/pyro_video.mp4' type='video/mp4'>
+          </video>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="rotate-container-1" onTouchStart="this.classList.toggle('hover');">
+      <div class="rotate-1">
+        <div class='front-1'>
+          <img src='images/cheese.png'>
+        </div>
+        <div class='back-1'>
+          <video class="video-2" width='auto' height='427px'>
+            <source src='videos/cheese_video.mp4' type='video/mp4'>
+          </video>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="rotate-container-2" onTouchStart="this.classList.toggle('hover');">
+      <div class="rotate-2">
+        <div class='front-2'>
+          <img src='images/equality_allies.png'>
+        </div>
+        <div class='back-2'>
+          <video class="video-3" width='auto' height='427px'>
+            <source src='videos/lbgt.mp4' type='video/mp4'>
+          </video>
+        </div>
+      </div>
+    </div>
+
+    <div class="rotate-container-3" onTouchStart="this.classList.toggle('hover');">
+      <div class="rotate-2">
+        <div class='front-2'>
+          <img src='images/rural_reflection.jpg'>
+        </div>
+        <div class='back-2'>
+          <video class="video-3" width='auto' height='427px'>
+            <source src='http://res.cloudinary.com/dtnwzbeum/video/upload/v1485465780/jewlery_video_pedmf3.mp4' type='video/mp4'>
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <div class="writing">
+    <h3 class="featured-destinations">Featured Destinations</h3>
+  </div>
+  <div class='div-container'>
+    <div class="outer-features">
+
+      <div class="featured">
+        <div class='miami'>
+          <img src='images/destination/miami.jpg'>
+        </div>
+        <div>Miami</div>
+      </div>
+
+      <div class="featured">
+        <div class='sanfrancisco'>
+          <img src='images/destination/sanfrancisco.jpg'>
+        </div>
+        <div>San Francisco</div>
+      </div>
+
+      <div class="featured">
+        <div class='la'>
+          <img src='images/destination/losangeles.jpg'>
+        </div>
+        <div>Los Angeles</div>
+      </div>
+
+      <div class="featured">
+        <div class='tokyo'>
+          <img src='images/destination/tokyo.jpg'>
+        </div>
+        <div>Tokyo</div>
+      </div>
+
+    </div>
+  </div>
+
+
+
+  </div>
+  </div>
+
+  <script>
+
+  $(".slideshow > div:gt(0)").hide();
+  $(".slideshow").hover(
+    function () {
+      scroll = setInterval(function() {
+        $('.slideshow > div:first')
+        .fadeOut(1000)
+        .next()
+        .fadeIn(1000)
+        .end()
+        .appendTo('.slideshow');
+      },  1000);
+    }, function() {
+      clearInterval(scroll);
+    }
+  );
+
+  $(".slideshow-1 > div:gt(0)").hide();
+  $(".slideshow-1").hover(
+    function () {
+      scroll = setInterval(function() {
+        $('.slideshow-1 > div:first')
+        .fadeOut(1000)
+        .next()
+        .fadeIn(1000)
+        .end()
+        .appendTo('.slideshow-1');
+      },  1000);
+    }, function() {
+      clearInterval(scroll);
+    }
+  );
+
+  $(".slideshow-2 > div:gt(0)").hide();
+  $(".slideshow-2").hover(
+    function () {
+      scroll = setInterval(function() {
+        $('.slideshow-2 > div:first')
+        .fadeOut(1000)
+        .next()
+        .fadeIn(2000)
+        .end()
+        .appendTo('.slideshow-2');
+      },  1400);
+    }, function() {
+      clearInterval(scroll);
+    }
+  );
+
+  $(".video-1").mousemove( hoverVideo );
+  $(".video-1").mouseout( hideVideo );
+
+  function hoverVideo(e) {
+    e.currentTarget.play();
+    e.muted = false;
+  }
+
+  function hideVideo(e) {
+    e.currentTarget.pause();
+    e.currentTarget.currentTime = 0;
+  }
+
+  $(".video-2").mousemove( hoverVideo );
+  $(".video-2").mouseout( hideVideo );
+
+  $(".video-3").mousemove( hoverVideo );
+  $(".video-3").mouseout( hideVideo );
+
+  $(".header").mouseover(function() {
+    $('.hidden-explanation').css("display", "inline-block");
+  })
+
+  $(".header").mouseout(function() {
+    setTimeout(function(){
+      $('.hidden-explanation').css("display", "none");
+    }, 3000);
+
+  });
+
+
+</script>
+</body>
+</html>

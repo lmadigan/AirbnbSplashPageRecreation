@@ -1,0 +1,92 @@
+.slideshow-container{
+  width: 100%;
+  display: flex;
+}
+
+.slideshow{
+    position: relative;
+    width: 380px;
+    height: 240px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.slideshow > div {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+}
+
+.slideshow > div > img {
+  width: 100%;
+  height: auto;
+}
+
+.slideshow-1{
+    position: relative;
+    width: 380px;
+    height: 240px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.slideshow-1 > div {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+}
+
+.slideshow-1 > div > img {
+  width: 100%;
+  height: auto;
+}
+
+
+.slideshow-2{
+    position: relative;
+    width: 380px;
+    height: 240px;
+    min-width: 300px;
+    height: 240px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.slideshow-2 > div {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.slideshow-2 > div > img {
+  width: 100%;
+  height: auto;
+}
+
+.title{
+  margin-left: 10px;
+}
+
+.S{
+  margin-right: 10px;
+}
+.div-container:nth-child(3){
+  height: 300px;
+  margin-top: 0px;
+  justify-content: center;
+}
+
+.recently-viewed{
+  margin-left: 10px;
+}
+
+.experiences{
+  margin-left: 10px;
+}

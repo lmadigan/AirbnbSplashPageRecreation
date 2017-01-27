@@ -1,0 +1,323 @@
+.outer-rotate {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  justify-content: flex-start;
+  margin-right: 10px;
+  margin-left: 10px;
+  max-width: 956px;
+}
+
+.rotate-container{
+  -webkit-perspective: 1000;
+  -moz-perspective: 1000;
+  -o-perspective: 1000;
+  perspective: 1000;
+  margin: 20px;
+  margin-left: 0;
+}
+
+.rotate-container:hover .rotate,
+.rotate-container.hover .rotate {
+    -webkit-transform: rotateY(180deg);
+		-moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+		transform: rotateY(180deg);
+	}
+
+.rotate-container, .front, .back {
+  width: 250px;
+  height: 300px;
+}
+
+.rotate {
+  webkit-transition: 0.6s;
+	-webkit-transform-style: preserve-3d;
+
+	-moz-transition: 0.6s;
+	-moz-transform-style: preserve-3d;
+
+  -o-transition: 0.6s;
+	-o-transform-style: preserve-3d;
+	transition: 0.8s;
+	transform-style: preserve-3d;
+
+	position: relative;
+  height: inherit;
+  width: inherit;
+}
+
+
+/* hide back of pane during swap */
+.front, .back {
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+	backface-visibility: hidden;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+/* front pane, placed above back */
+.front {
+	z-index: 2;
+	/* for firefox 31 */
+	transform: rotateY(0deg);
+  height: 375px;
+  width: 250px;
+}
+
+/* back, initially hidden pane */
+.back {
+  -webkit-transform: rotateY(180deg);
+	-moz-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+	transform: rotateY(180deg);
+  overflow: hidden;
+  height: 375px;
+  width: 250px;
+}
+
+.front img{
+  width: 100%;
+  height: auto;
+}
+
+.back video{
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+}
+
+.rotate-container-1{
+  -webkit-perspective: 1000;
+  -moz-perspective: 1000;
+  -o-perspective: 1000;
+  perspective: 1000;
+  margin: 20px;
+  margin-left: 0;
+  margin-top: 17px;
+}
+
+.rotate-container-1:hover .rotate-1,
+.rotate-container-1.hover .rotate-1 {
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+	}
+
+.rotate-container-1, .front-1, .back-1 {
+  width: 250px;
+  height: 300px;
+}
+
+.rotate-1 {
+  webkit-transition: 0.6s;
+  -webkit-transform-style: preserve-3d;
+
+  -moz-transition: 0.6s;
+  -moz-transform-style: preserve-3d;
+
+  -o-transition: 0.6s;
+  -o-transform-style: preserve-3d;
+  transition: 0.8s;
+  transform-style: preserve-3d;
+
+  position: relative;
+  height: inherit;
+  width: inherit;
+}
+
+
+/* hide back of pane during swap */
+.front-1, .back-1 {
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* front pane, placed above back */
+.front-1 {
+  z-index: 2;
+	/* for firefox 31 */
+	transform: rotateY(0deg);
+  height: 375px;
+  width: 250px;
+}
+
+/* back, initially hidden pane */
+.back-1 {
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+  overflow: hidden;
+  height: 375px;
+  width: 250px;
+}
+
+.front-1 img{
+  width: 100%;
+  height: auto;
+}
+
+.back-1 video{
+  width: 100%;
+  height: auto;
+}
+
+
+.rotate-container-2{
+  margin-top: -3px;
+  -webkit-perspective: 1000;
+  -moz-perspective: 1000;
+  -o-perspective: 1000;
+  perspective: 1000;
+  margin: 20px;
+}
+
+.rotate-container-2:hover .rotate-2,
+.rotate-container-2.hover .rotate-2 {
+    -webkit-transform: rotateY(180deg);
+		-moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+		transform: rotateY(180deg);
+	}
+
+.rotate-container-2, .front-2, .back-2 {
+  width: 250px;
+  height: 300px;
+}
+
+.rotate-2 {
+  webkit-transition: 0.6s;
+	-webkit-transform-style: preserve-3d;
+
+	-moz-transition: 0.6s;
+	-moz-transform-style: preserve-3d;
+
+  -o-transition: 0.6s;
+	-o-transform-style: preserve-3d;
+	transition: 0.8s;
+	transform-style: preserve-3d;
+
+	position: relative;
+  height: inherit;
+  width: inherit;
+}
+
+
+/* hide back of pane during swap */
+.front-2, .back-2 {
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+	backface-visibility: hidden;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+/* front pane, placed above back */
+.front-2 {
+	z-index: 2;
+	/* for firefox 31 */
+	transform: rotateY(0deg);
+  height: 375px;
+  width: 250px;
+}
+
+/* back, initially hidden pane */
+.back-2 {
+  -webkit-transform: rotateY(180deg);
+	-moz-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+	transform: rotateY(180deg);
+  overflow: hidden;
+  height: 375px;
+  width: 250px;
+}
+
+.front-2 img{
+  width: 100%;
+  height: auto;
+}
+
+.back-2 video{
+  width: 100%;
+  height: auto;
+}
+
+.rotate-container-3{
+  -webkit-perspective: 1000;
+  -moz-perspective: 1000;
+  -o-perspective: 1000;
+  perspective: 1000;
+  margin: 20px;
+  margin-top: 2px;
+}
+
+
+.featured-destinations{
+margin-bottom: 20px;
+margin-left: 10px;
+}
+
+.featured div:hover{
+  box-shadow: 0px 2px 14px 0px rgba(0,0,0,0.75);
+
+}
+
+
+
+@media (max-width: 980px)
+{
+    .rotate-container-3
+    {
+        display: none;
+    }
+}
+
+@media (max-width: 880px) {
+  .rotate-container-2
+  {
+      display: none;
+  }
+  .rotate-container-1, .front-1, .back-1 {
+    width: 320px;;
+    height: 380px;
+  }
+  .rotate-container, .front, .back {
+    width: 320px;;
+    height: 380px;
+  }
+}
+
+@media (max-width: 800px)
+{
+  .slideshow-2{
+    display: none;
+  }
+  .slideshow-container{
+    justify-content: flex-start;
+  }
+  .slideshow{
+    width: 480px;
+    height: 290px;
+  }
+
+  .slideshow-1{
+    width: 480px;
+    height: 290px;
+  }
+}
